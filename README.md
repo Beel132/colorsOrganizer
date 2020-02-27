@@ -1,5 +1,5 @@
-# Colors Organizer
-
+# Colors Organizer (2020)
+#### 2 / 3 weeks to do
 If you're in trouble, and wanna organize your colors to use in your new website or just test'em, you can use its color organizer
 
 ## how it works
