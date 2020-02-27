@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <title>Colors</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Color <span class="color">organizer</span></h1>
+        <p>Organize your colors, so you can pick'em up when you want to!</p>
+
+        <div class="title">
+            <p class="desc semi">Your palette title</p>
+            <input type="text" autocomplete="off" spellcheck="false" placeholder="My new palett" id="palette--title" />
+        </div>
+
+        <div class="color--choose">
+            <p class="desc">Choose the number of colors you wanna group</p>
+
+            <select id="color--number" onchange="decideIfDeleteOrCreate()">
+                <option value="0" selected disabled>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <div class="colors--container">
+            <div id="boxes--container">
+                <div class="none" id="color--box">
+                    <div class="box" id="box"></div>
+                    <div class="input--container">
+                        <input type="text" maxlength="7" class="input" spellcheck="false" autocomplete="off"
+                            onkeyup="changeBoxColorBasedOnInputValue()" />
+                    </div>
+                    <p>Color code</p>
+                </div>
+            </div>
+
+            <button class="btn" id="create--button">Save</button>
+            <p class="desc" style="margin: 10px 0 0 0 !important;">or <span class="color">enter</span></p>
+        </div>
+        <p class="madeby semi">Made by: <a href="https://www.linkedin.com/in/gabriel-sampaio-de-souza/" target="_blank"
+                class="color">Gabriel Sampaio</a></p>
+    </div>
+    <div id="save--color--container">
+        <div class="none" id="saved--colors--box">
+            <h1 class="h1Title"></h1>
+
+            <i class="fas fa-times closeIcon"></i>
+            <!-- onclick="closeBox()" -->
+            <div class="selected--colors--container">
+                <!-- <div class="color--and--title none" id="color--and--title">
+                    <div class="box"></div>
+                    <p class="box--color--code">&nbsp;</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="principal.js"></script>
+</body>
+
+</html>

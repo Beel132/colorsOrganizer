@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$main: #288;
+$white: #f2f2f2;
+$black: #212121;
+
+.color {
+    color: $black;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px rgba($color: #212121, $alpha: .15);
+}
+
+.semi {
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 13px;
+    color: rgba($color: #212121, $alpha: .65);
+    margin: 25px 0 0 0;
+}
+
+.none {
+    display: none !important;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:700, 300&display=swap');
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: $white;
+}
+
+.box,
+.box--result {
+    width: 50px;
+    background: #fff;
+    height: 50px;
+    margin: 30px 15px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 8px rgba($color: #212121, $alpha: .1);
+    transition: background .35s ease-in-out;
+}
+
+#container {
+    width: 65%;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    color: $black;
+
+    h1 {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    p {
+        padding: 5px 0;
+    }
+
+    select {
+        margin: 10px 0;
+        width: 60px;
+        padding: 5px 35px 5px 5px;
+        font-size: 16px;
+        border: 1px solid rgba($color: #ccc, $alpha: .5);
+        height: 34px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    #boxes--container {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .color--boxes {
+            margin: 0 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .input--container {
+                position: relative;
+
+                width: 70%;
+                background: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: none;
+                margin: 0;
+
+                input {
+                    border: none;
+                    background: transparent;
+                    border-bottom: 2px solid rgba($color: #ccc, $alpha: .75);
+                    padding: 10px 5px;
+                    outline: none;
+                    width: 100%;
+                    text-align: center;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 700;
+                    box-shadow: 0 0 2px rgba($color: #212121, $alpha: .15);
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                }
+
+                span {
+                    position: absolute;
+                    left: 10px;
+                    font-weight: 600;
+                }
+            }
+
+            p {
+                color: rgba($color: #212121, $alpha: .5);
+                margin: 5px 0;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .btn {
+        cursor: pointer;
+        padding: 10px;
+        background: #fff;
+        box-shadow: 1px 2px 5px rgba($color: #212121, $alpha: .15);
+        border: none;
+        border-radius: 10px;
+        min-width: 100px;
+        margin: 30px 0 0 0;
+        font-weight: 600;
+        transition: box-shadow .1s ease-in-out;
+        outline: none;
+
+        &:focus {
+            border: 2px solid rgba($color: #ccc, $alpha: .5);
+            box-shadow: none;
+        }
+    }
+
+    .madeby {
+        user-select: none;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+
+        a {
+            color: $black;
+            text-shadow: none;
+        }
+    }
+
+    .title {
+        p {
+            font-size: 15px;
+        }
+
+        input {
+            border: none;
+            padding: 10px 0;
+            margin: 5px 0;
+            background-color: transparent;
+            color: $black;
+            font-weight: 300;
+            border-bottom: 2px solid rgba($color: #ccc, $alpha: .5);
+            font-size: 20px;
+            outline: none;
+            text-align: center;
+            width: 75%;
+            font-family: 'Nunito', sans-serif;
+            letter-spacing: .5px;
+
+            &:focus::placeholder {
+                opacity: 0;
+            }
+
+            &::placeholder {
+                opacity: .65;
+            }
+        }
+    }
+}
+
+#save--color--container {
+    // position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px 0;
+
+
+    i.fa-times {
+        cursor: pointer;
+        position: absolute;
+        font-size: 20px;
+        top: calc(30px / 2);
+        right: 15px;
+    }
+
+    .saved--colors--box {
+        position: relative;
+        background-color: $white;
+        width: 400px;
+        height: 50%;
+        background-color: #fff;
+        margin: 20px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: -2px -2px 10px rgba($color: #000000, $alpha: .25);
+
+        // border-bottom: 2px solid red;
+
+        .selected--colors--container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        h1 {
+            border-radius: 5px 5px 0 0;
+            text-shadow: -2px 2px 5px rgba($color: $black, $alpha: .15);
+            text-align: center;
+            font-size: 23px;
+            padding: 10px;
+        }
+
+        .color--and--title {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            height: auto;
+
+            .input--box--color--code {
+                border: none;
+                background: transparent;
+                padding: 10px 5px;
+                outline: none;
+                width: 70%;
+                // border-bottom: 2px solid #ccc;
+                text-align: center;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 700;
+                box-shadow: 0 0 2px rgba($color: #212121, $alpha: .15);
+                border-radius: 5px;
+                text-transform: uppercase;
+                transition: all .2s ease-in-out;
+            }
+
+            .box,
+            .box--result {
+                background-color: $main;
+                margin: 20px 0 5px 0;
+                box-shadow: 2px 2px 5px rgba($color: $black, $alpha: .25);
+            }
+
+            p {
+                font-weight: 600;
+                font-family: 'Nunito', sans-serif;
+                letter-spacing: .5px;
+                text-transform: uppercase;
+                padding: 10px 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:0\0) {
+    select {
+        background: none\9;
+        padding: 5px\9;
+    }
+}

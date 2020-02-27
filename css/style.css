@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:700, 300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.color {
+  color: #212121;
+  font-weight: 600;
+  text-shadow: 0px 0px 5px rgba(33, 33, 33, 0.15);
+}
+
+.semi {
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 13px;
+  color: rgba(33, 33, 33, 0.65);
+  margin: 25px 0 0 0;
+}
+
+.none {
+  display: none !important;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background: #f2f2f2;
+}
+
+.box,
+.box--result {
+  width: 50px;
+  background: #fff;
+  height: 50px;
+  margin: 30px 15px;
+  border-radius: 50px;
+  -webkit-box-shadow: 2px 2px 8px rgba(33, 33, 33, 0.1);
+          box-shadow: 2px 2px 8px rgba(33, 33, 33, 0.1);
+  -webkit-transition: background .35s ease-in-out;
+  transition: background .35s ease-in-out;
+}
+
+#container {
+  width: 65%;
+  margin: auto;
+  height: auto;
+  text-align: center;
+  color: #212121;
+}
+
+#container h1 {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+#container p {
+  padding: 5px 0;
+}
+
+#container select {
+  margin: 10px 0;
+  width: 60px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  height: 34px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+#container select::-ms-expand {
+  display: none;
+}
+
+#container #boxes--container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container #boxes--container .color--boxes {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #boxes--container .color--boxes .input--container {
+  position: relative;
+  width: 70%;
+  background: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin: 0;
+}
+
+#container #boxes--container .color--boxes .input--container input {
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.75);
+  padding: 10px 5px;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 2px rgba(33, 33, 33, 0.15);
+          box-shadow: 0 0 2px rgba(33, 33, 33, 0.15);
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+#container #boxes--container .color--boxes .input--container span {
+  position: absolute;
+  left: 10px;
+  font-weight: 600;
+}
+
+#container #boxes--container .color--boxes p {
+  color: rgba(33, 33, 33, 0.5);
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+#container .btn {
+  cursor: pointer;
+  padding: 10px;
+  background: #fff;
+  -webkit-box-shadow: 1px 2px 5px rgba(33, 33, 33, 0.15);
+          box-shadow: 1px 2px 5px rgba(33, 33, 33, 0.15);
+  border: none;
+  border-radius: 10px;
+  min-width: 100px;
+  margin: 30px 0 0 0;
+  font-weight: 600;
+  -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+  transition: -webkit-box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out, -webkit-box-shadow .1s ease-in-out;
+  outline: none;
+}
+
+#container .btn:focus {
+  border: 2px solid rgba(204, 204, 204, 0.5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#container .madeby {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+#container .madeby a {
+  color: #212121;
+  text-shadow: none;
+}
+
+#container .title p {
+  font-size: 15px;
+}
+
+#container .title input {
+  border: none;
+  padding: 10px 0;
+  margin: 5px 0;
+  background-color: transparent;
+  color: #212121;
+  font-weight: 300;
+  border-bottom: 2px solid rgba(204, 204, 204, 0.5);
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+  width: 75%;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: .5px;
+}
+
+#container .title input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+#container .title input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+#container .title input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+#container .title input:focus::placeholder {
+  opacity: 0;
+}
+
+#container .title input::-webkit-input-placeholder {
+  opacity: .65;
+}
+
+#container .title input:-ms-input-placeholder {
+  opacity: .65;
+}
+
+#container .title input::-ms-input-placeholder {
+  opacity: .65;
+}
+
+#container .title input::placeholder {
+  opacity: .65;
+}
+
+#save--color--container {
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+#save--color--container i.fa-times {
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+  top: calc(30px / 2);
+  right: 15px;
+}
+
+#save--color--container .saved--colors--box {
+  position: relative;
+  background-color: #f2f2f2;
+  width: 400px;
+  height: 50%;
+  background-color: #fff;
+  margin: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.25);
+}
+
+#save--color--container .saved--colors--box .selected--colors--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#save--color--container .saved--colors--box h1 {
+  border-radius: 5px 5px 0 0;
+  text-shadow: -2px 2px 5px rgba(33, 33, 33, 0.15);
+  text-align: center;
+  font-size: 23px;
+  padding: 10px;
+}
+
+#save--color--container .saved--colors--box .color--and--title {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+}
+
+#save--color--container .saved--colors--box .color--and--title .input--box--color--code {
+  border: none;
+  background: transparent;
+  padding: 10px 5px;
+  outline: none;
+  width: 70%;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  -webkit-box-shadow: 0 0 2px rgba(33, 33, 33, 0.15);
+          box-shadow: 0 0 2px rgba(33, 33, 33, 0.15);
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#save--color--container .saved--colors--box .color--and--title .box,
+#save--color--container .saved--colors--box .color--and--title .box--result {
+  background-color: #288;
+  margin: 20px 0 5px 0;
+  -webkit-box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.25);
+          box-shadow: 2px 2px 5px rgba(33, 33, 33, 0.25);
+}
+
+#save--color--container .saved--colors--box .color--and--title p {
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+@media screen and (min-width: 0\0) {
+  select {
+    background: none\9;
+    padding: 5px\9;
+  }
+}
+/*# sourceMappingURL=style.css.map */
