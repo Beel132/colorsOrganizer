@@ -264,11 +264,8 @@ function appendColorsAndParagraphToResultBox() {
 // ------------------------------------------- //
 
 function closeBox(value) {
-    for (let pos = 0; pos <= IDSArray.length; pos++) {
-        containerColorsResult.removeChild(document.getElementById(`${value}`));
-        IDSArray.splice(IDSArray.indexOf(value), 1);
-        break;
-    }
+    containerColorsResult.removeChild(document.getElementById(`${value}`));
+    IDSArray.splice(IDSArray.indexOf(value), 1);
 }
 
 // ------------------------------------------- //
