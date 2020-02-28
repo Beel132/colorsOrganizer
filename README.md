@@ -2,13 +2,13 @@
 
 ## How it works?
 
-First, you will see this `Title` interface, where you can put your **PALETT TITLE**.
+First, you will see this `Title` interface, where you can put your **PALETTE TITLE**.
 
 ![First View Interface](https://i.imgur.com/W9VHqSs.png)
 
 ---
 
-Then, you have to choose the number of colors you want to save in your new palett, so new boxes will be created based on your selected value, like this:
+Then, you have to choose the number of colors you want to save in your new palette, so new boxes will be created based on your selected value, like this:
 
 ![Selected Interface](https://i.imgur.com/5NRBaVi.png)
 
