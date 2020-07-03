@@ -52,11 +52,6 @@ Project based in:
 * CSS `SASS`
 * **JavaScript**
 
-### Time of work:
-
-`2` to `3` weeks
-
 ## Thanks
 
-Thank you if you read until here, i'm proud of this work, and i hope you are too!  
-> :)
+Thank you if you read until here, i'm actually proud of this work!  
